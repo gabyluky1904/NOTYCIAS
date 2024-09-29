@@ -1,0 +1,405 @@
+<html><head><base href="#opinion">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoticiasNewPro - Sección de Opinión</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root {
+  --primary-color: #0056b3;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --accent-color: #ffc107;
+  --background-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.opinion-header {
+  background-color: var(--secondary-color);
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.opinion-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.opinion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.opinion-card {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.opinion-card:hover {
+  transform: translateY(-5px);
+}
+
+.opinion-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.opinion-card-content {
+  padding: 1.5rem;
+}
+
+.opinion-card-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.opinion-card-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.opinion-card-author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.opinion-card-author-name {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.opinion-card-author-title {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.opinion-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.opinion-card p {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+.opinion-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.opinion-card-date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.opinion-card-readmore {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.opinion-card-readmore:hover {
+  background-color: #004494;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-top">
+      <div class="logo">NoticiasNewPro</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#ultimas-noticias">Últimas Noticias</a></li>
+        <li><a href="#nacional">Nacional</a></li>
+        <li><a href="#internacional">Internacional</a></li>
+        <li><a href="#economia">Economía</a></li>
+        <li><a href="#tecnologia">Tecnología</a></li>
+        <li><a href="#deportes">Deportes</a></li>
+        <li><a href="#cultura">Cultura</a></li>
+        <li><a href="#opinion">Opinión</a></li>
+        <li><a href="#videos">Videos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="opinion-header">
+    <div class="container">
+      <h1>Sección de Opinión</h1>
+      <p>Perspectivas y análisis de nuestros expertos sobre los temas más relevantes</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="opinion-grid">
+      <div class="opinion-card">
+        <img src="https://via.placeholder.com/400x200" alt="Imagen de artículo de opinión" class="opinion-card-image">
+        <div class="opinion-card-content">
+          <div class="opinion-card-author">
+            <img src="https://via.placeholder.com/50x50" alt="Foto de María González">
+            <div class="opinion-card-author-info">
+              <span class="opinion-card-author-name">María González</span>
+              <span class="opinion-card-author-title">Analista Política</span>
+            </div>
+          </div>
+          <h3>El futuro de la democracia en la era digital</h3>
+          <p>En un mundo cada vez más conectado, ¿cómo afectan las redes sociales y la desinformación a nuestros procesos democráticos? Analizamos los desafíos y oportunidades que presenta la era digital para la participación ciudadana y la toma de decisiones políticas.</p>
+          <div class="opinion-card-footer">
+            <span class="opinion-card-date">15 de mayo, 2023</span>
+            <a href="#leer-mas" class="opinion-card-readmore">Leer más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="opinion-card">
+        <img src="https://via.placeholder.com/400x200" alt="Imagen de artículo de opinión" class="opinion-card-image">
+        <div class="opinion-card-content">
+          <div class="opinion-card-author">
+            <img src="https://via.placeholder.com/50x50" alt="Foto de Carlos Rodríguez">
+            <div class="opinion-card-author-info">
+              <span class="opinion-card-author-name">Carlos Rodríguez</span>
+              <span class="opinion-card-author-title">Economista Jefe</span>
+            </div>
+          </div>
+          <h3>La inflación y sus efectos en la economía global</h3>
+          <p>Con las tasas de inflación alcanzando niveles no vistos en décadas, exploramos las causas subyacentes y las posibles consecuencias para las economías desarrolladas y emergentes. ¿Estamos ante un fenómeno temporal o un cambio estructural en la economía global?</p>
+          <div class="opinion-card-footer">
+            <span class="opinion-card-date">14 de mayo, 2023</span>
+            <a href="#leer-mas" class="opinion-card-readmore">Leer más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="opinion-card">
+        <img src="https://via.placeholder.com/400x200" alt="Imagen de artículo de opinión" class="opinion-card-image">
+        <div class="opinion-card-content">
+          <div class="opinion-card-author">
+            <img src="https://via.placeholder.com/50x50" alt="Foto de Ana Martínez">
+            <div class="opinion-card-author-info">
+              <span class="opinion-card-author-name">Ana Martínez</span>
+              <span class="opinion-card-author-title">Experta en Tecnología</span>
+            </div>
+          </div>
+          <h3>Inteligencia Artificial: ¿Amiga o enemiga de la humanidad?</h3>
+          <p>Los avances en IA están revolucionando industrias y cambiando la forma en que vivimos y trabajamos. Pero, ¿cuáles son los riesgos éticos y sociales que debemos considerar? Analizamos el impacto de la IA en nuestra sociedad y su potencial para el futuro.</p>
+          <div class="opinion-card-footer">
+            <span class="opinion-card-date">13 de mayo, 2023</span>
+            <a href="#leer-mas" class="opinion-card-readmore">Leer más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="opinion-card">
+        <img src="https://via.placeholder.com/400x200" alt="Imagen de artículo de opinión" class="opinion-card-image">
+        <div class="opinion-card-content">
+          <div class="opinion-card-author">
+            <img src="https://via.placeholder.com/50x50" alt="Foto de Juan Pérez">
+            <div class="opinion-card-author-info">
+              <span class="opinion-card-author-name">Juan Pérez</span>
+              <span class="opinion-card-author-title">Especialista en Medio Ambiente</span>
+            </div>
+          </div>
+          <h3>Cambio climático: El desafío de nuestro tiempo</h3>
+          <p>A medida que los efectos del cambio climático se vuelven más evidentes, examinamos las políticas y acciones necesarias para mitigar sus impactos. ¿Estamos haciendo lo suficiente y con la rapidez necesaria para proteger nuestro planeta para las generaciones futuras?</p>
+          <div class="opinion-card-footer">
+            <span class="opinion-card-date">12 de mayo, 2023</span>
+            <a href="#leer-mas" class="opinion-card-readmore">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Acerca de NoticiasNewPro</h3>
+        <p>Somos tu fuente confiable de noticias, brindando información actualizada y precisa las 24 horas del día.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces rápidos</h3>
+        <ul>
+          <li><a href="#acerca-de">Acerca de</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#terminos">Términos y Condiciones</a></li>
+          <li><a href="#privacidad">Política de Privacidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Animación suave al hacer scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Efecto de carga lazy para las imágenes
+  const images = document.querySelectorAll('img');
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.classList.add('loaded');
+        imageObserver.unobserve(img);
+      }
+    });
+  }, options);
+
+  images.forEach(img => {
+    imageObserver.observe(img);
+  });
+
+  // Agregar interactividad a las tarjetas de opinión
+  const opinionCards = document.querySelectorAll('.opinion-card');
+  opinionCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'scale(1.05)';
+      card.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'scale(1)';
+      card.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+    });
+  });
+});
+</script>
+</body></html>
